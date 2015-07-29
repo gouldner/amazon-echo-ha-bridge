@@ -21,6 +21,12 @@ Echo Forget can be done <a href="http://echo.amazon.com/#settings/connected-home
 <br>
 Date: ${time?date}  Time: ${time?time}
 <br>
+
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
+
+
 </body>
 
 </html>
